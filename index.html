@@ -289,435 +289,399 @@ input[type="checkbox"]:checked {
 
         friend: { jp: "ともだち", gender: "any", max: 2 }
     };
-    // DATA
-    const characters = [{
-            id: 1,
-            name: "Alex",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "blond hair",
-                "blue eyes",
-                "glasses",
-                "green shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "きんぱつ",
-                "あおいめ",
-                "めがね",
-                "みどりのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 2,
-            name: "Sara",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "black hair",
-                "green eyes",
-                "bangs",
-                "red shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "くろいかみ",
-                "みどりのめ",
-                "まえがみ",
-                "あかいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 3,
-            name: "Daisy",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "blond hair",
-                "black eyes",
-                "yellow shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "きんぱつ",
-                "くろいめ",
-                "きいろいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 4,
-            name: "George",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "brown hair",
-                "green eyes",
-                "red shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "ちゃいろのかみ",
-                "みどりのめ",
-                "あかいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 5,
-            name: "Gina",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "red hair",
-                "brown eyes",
-                "hat",
-                "blue shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "あかいかみ",
-                "ちゃいろのめ",
-                "ぼうし",
-                "あおいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 6,
-            name: "Haru",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "gray hair",
-                "brown eyes",
-                "beanie",
-                "blue shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "はい色のかみ",
-                "ちゃいろのめ",
-                "ビーニー",
-                "あおいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 7,
-            name: "Evan",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "gray hair",
-                "brown eyes",
-                "beard",
-                "glasses",
-                "blue jacket"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "はい色のかみ",
-                "ちゃいろのめ",
-                "ひげ",
-                "めがね",
-                "あおいジャケット"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 8,
-            name: "Leo",
-            gender: "male",
-            traits_en: [
-                "long hair",
-                "black hair",
-                "brown eyes",
-                "glasses",
-                "brown jacket"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "くろいかみ",
-                "ちゃいろのめ",
-                "めがね",
-                "ちゃいろのジャケット"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 9,
-            name: "Fiona",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "black hair",
-                "blue eyes",
-                "red shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "くろいかみ",
-                "あおいめ",
-                "あかいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 10,
-            name: "Mia",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "gray hair",
-                "black eyes",
-                "ponytail",
-                "glasses",
-                "green shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "はい色のかみ",
-                "くろいめ",
-                "ポニーテール",
-                "めがね",
-                "みどりのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 11,
-            name: "Noah",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "black hair",
-                "black eyes",
-                "cap",
-                "blue shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "くろいかみ",
-                "くろいめ",
-                "キャップ",
-                "あおいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 12,
-            name: "Isaac",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "blond hair",
-                "blue eyes",
-                "moustache",
-                "grey shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "きんぱつ",
-                "あおいめ",
-                "くちひげ",
-                "はい色のシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 13,
-            name: "Lena",
-            gender: "female",
-            traits_en: [
-                "short hair",
-                "brown hair",
-                "green eyes",
-                "purple shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "ちゃいろのかみ",
-                "みどりのめ",
-                "むらさきのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 14,
-            name: "Olive",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "brown hair",
-                "brown eyes",
-                "bangs",
-                "yellow shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "ちゃいろのかみ",
-                "ちゃいろのめ",
-                "まえがみ",
-                "きいろいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 15,
-            name: "Kai",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "black hair",
-                "brown eyes",
-                "glasses",
-                "cap",
-                "light blue shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "くろいかみ",
-                "ちゃいろのめ",
-                "めがね",
-                "キャップ",
-                "みずいろのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 16,
-            name: "Aya",
-            gender: "female",
-            traits_en: [
-                "short hair",
-                "black hair",
-                "blue eyes",
-                "red shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "くろいかみ",
-                "あおいめ",
-                "あかいシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 17,
-            name: "Paul",
-            gender: "male",
-            traits_en: [
-                "short hair",
-                "black hair",
-                "green eyes",
-                "cap",
-                "green shirt"
-            ],
-            traits_jp: [
-                "みじかいかみ",
-                "くろいかみ",
-                "みどりのめ",
-                "キャップ",
-                "みどりのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
-        },
-
-        {
-            id: 18,
-            name: "Hana",
-            gender: "female",
-            traits_en: [
-                "long hair",
-                "blond hair",
-                "black eyes",
-                "ponytail",
-                "green shirt"
-            ],
-            traits_jp: [
-                "ながいかみ",
-                "きんぱつ",
-                "くろいめ",
-                "ポニーテール",
-                "みどりのシャツ"
-            ],
-            criminal: {
-                narrative_en: "",
-                narrative_jp: ""
-            }
+   // DATA
+const characters = [{
+        id: 1,
+        name: "Alex",
+        gender: "male",
+        traits_en: [
+            "short blond hair",
+            "blue eyes",
+            "glasses",
+            "green shirt"
+        ],
+        traits_jp: [
+            "みじかいきんぱつ",
+            "あおいめ",
+            "めがね",
+            "みどりのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
         }
-    ];
+    },
+
+    {
+        id: 2,
+        name: "Sara",
+        gender: "female",
+        traits_en: [
+            "long black hair",
+            "green eyes",
+            "bangs",
+            "red shirt"
+        ],
+        traits_jp: [
+            "ながいくろいかみ",
+            "みどりのめ",
+            "まえがみ",
+            "あかいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 3,
+        name: "Daisy",
+        gender: "female",
+        traits_en: [
+            "long blond hair",
+            "black eyes",
+            "yellow shirt"
+        ],
+        traits_jp: [
+            "ながいきんぱつ",
+            "くろいめ",
+            "きいろいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 4,
+        name: "George",
+        gender: "male",
+        traits_en: [
+            "short brown hair",
+            "green eyes",
+            "red shirt"
+        ],
+        traits_jp: [
+            "みじかいちゃいろのかみ",
+            "みどりのめ",
+            "あかいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 5,
+        name: "Gina",
+        gender: "female",
+        traits_en: [
+            "long red hair",
+            "brown eyes",
+            "hat",
+            "blue shirt"
+        ],
+        traits_jp: [
+            "ながいあかいかみ",
+            "ちゃいろのめ",
+            "ぼうし",
+            "あおいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 6,
+        name: "Haru",
+        gender: "male",
+        traits_en: [
+            "short gray hair",
+            "brown eyes",
+            "beanie",
+            "blue shirt"
+        ],
+        traits_jp: [
+            "みじかいはい色のかみ",
+            "ちゃいろのめ",
+            "ビーニー",
+            "あおいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 7,
+        name: "Evan",
+        gender: "male",
+        traits_en: [
+            "short gray hair",
+            "brown eyes",
+            "beard",
+            "glasses",
+            "blue jacket"
+        ],
+        traits_jp: [
+            "みじかいはい色のかみ",
+            "ちゃいろのめ",
+            "ひげ",
+            "めがね",
+            "あおいジャケット"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 8,
+        name: "Leo",
+        gender: "male",
+        traits_en: [
+            "long black hair",
+            "brown eyes",
+            "glasses",
+            "brown jacket"
+        ],
+        traits_jp: [
+            "ながいくろいかみ",
+            "ちゃいろのめ",
+            "めがね",
+            "ちゃいろのジャケット"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 9,
+        name: "Fiona",
+        gender: "female",
+        traits_en: [
+            "long black hair",
+            "blue eyes",
+            "red shirt"
+        ],
+        traits_jp: [
+            "ながいくろいかみ",
+            "あおいめ",
+            "あかいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 10,
+        name: "Mia",
+        gender: "female",
+        traits_en: [
+            "long gray hair",
+            "black eyes",
+            "ponytail",
+            "glasses",
+            "green shirt"
+        ],
+        traits_jp: [
+            "ながいはい色のかみ",
+            "くろいめ",
+            "ポニーテール",
+            "めがね",
+            "みどりのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 11,
+        name: "Noah",
+        gender: "male",
+        traits_en: [
+            "short black hair",
+            "black eyes",
+            "cap",
+            "blue shirt"
+        ],
+        traits_jp: [
+            "みじかいくろいかみ",
+            "くろいめ",
+            "キャップ",
+            "あおいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 12,
+        name: "Isaac",
+        gender: "male",
+        traits_en: [
+            "short blond hair",
+            "blue eyes",
+            "moustache",
+            "grey shirt"
+        ],
+        traits_jp: [
+            "みじかいきんぱつ",
+            "あおいめ",
+            "くちひげ",
+            "はい色のシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 13,
+        name: "Lena",
+        gender: "female",
+        traits_en: [
+            "short brown hair",
+            "green eyes",
+            "purple shirt"
+        ],
+        traits_jp: [
+            "みじかいちゃいろのかみ",
+            "みどりのめ",
+            "むらさきのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 14,
+        name: "Olive",
+        gender: "female",
+        traits_en: [
+            "long brown hair",
+            "brown eyes",
+            "bangs",
+            "yellow shirt"
+        ],
+        traits_jp: [
+            "ながいちゃいろのかみ",
+            "ちゃいろのめ",
+            "まえがみ",
+            "きいろいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 15,
+        name: "Kai",
+        gender: "male",
+        traits_en: [
+            "short black hair",
+            "brown eyes",
+            "glasses",
+            "cap",
+            "light blue shirt"
+        ],
+        traits_jp: [
+            "みじかいくろいかみ",
+            "ちゃいろのめ",
+            "めがね",
+            "キャップ",
+            "みずいろのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 16,
+        name: "Aya",
+        gender: "female",
+        traits_en: [
+            "short black hair",
+            "blue eyes",
+            "red shirt"
+        ],
+        traits_jp: [
+            "みじかいくろいかみ",
+            "あおいめ",
+            "あかいシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 17,
+        name: "Paul",
+        gender: "male",
+        traits_en: [
+            "short black hair",
+            "green eyes",
+            "cap",
+            "green shirt"
+        ],
+        traits_jp: [
+            "みじかいくろいかみ",
+            "みどりのめ",
+            "キャップ",
+            "みどりのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    },
+
+    {
+        id: 18,
+        name: "Hana",
+        gender: "female",
+        traits_en: [
+            "long blond hair",
+            "black eyes",
+            "ponytail",
+            "green shirt"
+        ],
+        traits_jp: [
+            "ながいきんぱつ",
+            "くろいめ",
+            "ポニーテール",
+            "みどりのシャツ"
+        ],
+        criminal: {
+            narrative_en: "",
+            narrative_jp: ""
+        }
+    }
+];
 
     function assignRoles() {
         // reset
